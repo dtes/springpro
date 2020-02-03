@@ -1,4 +1,4 @@
-package spc.ripper.bpp;
+package spc.ripper.quoters.bpp;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.BeanDefinition;
@@ -6,7 +6,7 @@ import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
-import spc.ripper.annotations.PostProxy;
+import spc.ripper.quoters.annotations.PostProxy;
 
 import java.lang.reflect.Method;
 

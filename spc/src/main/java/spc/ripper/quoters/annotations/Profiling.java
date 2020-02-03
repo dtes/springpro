@@ -1,8 +1,11 @@
-package spc.ripper.annotations;
+package spc.ripper.quoters.annotations;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 @Retention(RetentionPolicy.RUNTIME)
-public @interface PostProxy {
+public @interface Profiling {
+
+
+
 }

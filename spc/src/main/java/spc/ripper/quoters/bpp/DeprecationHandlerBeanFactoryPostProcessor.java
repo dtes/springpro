@@ -1,10 +1,10 @@
-package spc.ripper.bpp;
+package spc.ripper.quoters.bpp;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
-import spc.ripper.annotations.DeprecatedClass;
+import spc.ripper.quoters.annotations.DeprecatedClass;
 
 public class DeprecationHandlerBeanFactoryPostProcessor implements BeanFactoryPostProcessor {
     @Override

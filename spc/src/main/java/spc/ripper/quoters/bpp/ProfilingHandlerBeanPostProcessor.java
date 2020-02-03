@@ -1,8 +1,8 @@
-package spc.ripper.bpp;
+package spc.ripper.quoters.bpp;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
-import spc.ripper.annotations.Profiling;
+import spc.ripper.quoters.annotations.Profiling;
 import spc.ripper.quoters.ProfilingController;
 
 import javax.management.*;

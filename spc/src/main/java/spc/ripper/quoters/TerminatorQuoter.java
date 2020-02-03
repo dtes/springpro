@@ -1,10 +1,10 @@
 package spc.ripper.quoters;
 
 import org.springframework.beans.factory.InitializingBean;
-import spc.ripper.annotations.DeprecatedClass;
-import spc.ripper.annotations.InjectRandomInt;
-import spc.ripper.annotations.PostProxy;
-import spc.ripper.annotations.Profiling;
+import spc.ripper.quoters.annotations.DeprecatedClass;
+import spc.ripper.quoters.annotations.InjectRandomInt;
+import spc.ripper.quoters.annotations.PostProxy;
+import spc.ripper.quoters.annotations.Profiling;
 
 import javax.annotation.PostConstruct;
 
@@ -63,4 +63,7 @@ public class TerminatorQuoter implements Quoter, InitializingBean {
         this.message = message;
     }
 
+    public void setRepeat(int repeat) {
+        this.repeat = repeat;
+    }
 }
