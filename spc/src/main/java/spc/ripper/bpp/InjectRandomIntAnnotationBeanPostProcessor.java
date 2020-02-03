@@ -8,7 +8,7 @@ import spc.ripper.annotations.InjectRandomInt;
 import java.lang.reflect.Field;
 import java.util.Random;
 
-public class InjectRandomIntAnnotationPostProcessor implements BeanPostProcessor {
+public class InjectRandomIntAnnotationBeanPostProcessor implements BeanPostProcessor {
 
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {

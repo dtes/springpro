@@ -5,10 +5,10 @@
 
 
     <beans:annotation-config/>
-    <bean class="spc.ripper.bpp.InjectRandomIntAnnotationPostProcessor"/>
+    <bean class="spc.ripper.bpp.InjectRandomIntAnnotationBeanPostProcessor"/>
     <bean class="spc.ripper.bpp.ProfilingHandlerBeanPostProcessor"/>
     <bean class="spc.ripper.bpp.PostProxyInvokerContextListener"/>
-    <bean class="spc.ripper.bpp.DeprecationHandlerBeanFactoryPostProcessor"/>
+    <!--<bean class="spc.ripper.bpp.DeprecationHandlerBeanFactoryPostProcessor"/>-->
 
     <bean id="terminator" class="spc.ripper.quoters.TerminatorQuoter" init-method="phase22">
         <property name="message" value="I'll be back"/>

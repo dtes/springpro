@@ -18,12 +18,14 @@ public class TerminatorQuoter implements Quoter, InitializingBean {
 
     public TerminatorQuoter() {
         System.out.println("Phase 1");
+        System.out.println(repeat);
     }
 
     // unpredictable order
     @PostConstruct
     public void phase2() {
         System.out.println("phase 2");
+        System.out.println(repeat);
     }
 
     // unpredictable order
@@ -46,10 +48,6 @@ public class TerminatorQuoter implements Quoter, InitializingBean {
     public void phase22() {
         System.out.println("phase 2.2");
         //sayQuote();
-    }
-
-    public void phase3() {
-        sayQuote();
     }
 
     @Override
