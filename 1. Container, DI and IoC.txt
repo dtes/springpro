@@ -1,0 +1,22 @@
+[application-context]
+    The application context in a Spring application is a java object that implements the ApplicationContext interface and is responsible for: 
+        1) Instantiating beans in the application context.
+        2) Configuring the beans in the application context.
+        3) Assembling the bean in the application context.
+        4) Managing the lifecycle of Spring beans.
+
+    An application context have the following properties:
+        1) Is a bean factory. (ListableBeanFactory)
+        2) It is a hierarchical bean factory. (HierarchicalBeanFactory)
+        3) Is a resource loader that can load file resources. (ResourcePatterResolver->ResourceLoader)
+        4) It is an event publisher. (ApplicationEventPublisher)
+        5) It is a message source. Can resolve message and supports i18n. (MessageSource)
+        6) Is an environment. property resolves, bean-profiles, grouping beans. (EnvironmentCapable)
+
+    Some commonly used implementations of the ApplicationContext interface are:
+        1) AnnotationConfigApplicationContext. 
+        2) AnnotationConfigWebApplicationContext.
+        3) ClassPathXmlApplicationContext.
+        4) FileSystemXmlApplicationContext.
+        5) XmlWebApplicationContext.
+
